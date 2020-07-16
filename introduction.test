@@ -1,0 +1,12 @@
+@@ Set
+	domain galenframework.com
+
+@@ Table devices
+	|device		|tags		    |  size	 |
+	|desktop	|desktop		|1640x740|
+	|mobile		|mobile	    	|400x500 | 
+
+@@ Parameterized using devices
+Homepage on ${device} device
+	http://${domain} ${size}
+		check homepage.gspec --include "${tags}"

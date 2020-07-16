@@ -1,0 +1,119 @@
+{
+  "testId" : "2-homepage-on-mobile-device",
+  "name" : "Homepage on mobile device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://galenframework.com 400x500",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check homepage.gspec --include \"mobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: homepage.gspec included tags: mobile",
+          "status" : "error",
+          "time" : 1594895380460,
+          "includedTags" : [ "mobile" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "homepage.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "imageimg",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside imageouterpart",
+                "meta" : [ ],
+                "highlight" : [ "imageimg", "imageouterpart" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "left-of textGF -470px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "imageimg",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "textGF",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "-470px",
+                  "realDistance" : "-470px"
+                } ],
+                "highlight" : [ "imageimg", "textGF" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "width  470px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "imageimg",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "imageimg",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "470px",
+                  "realDistance" : "470px"
+                } ],
+                "highlight" : [ "imageimg" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "height 220px",
+                "errors" : [ "\"imageimg\" height is 173px instead of 220px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "imageimg",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "imageimg",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "220px",
+                  "realDistance" : "173px"
+                } ],
+                "highlight" : [ "imageimg" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "textGF" : {
+              "area" : [ 15, 263, 470, 66 ]
+            },
+            "imageouterpart" : {
+              "area" : [ 15, 70, 470, 173 ]
+            },
+            "imageimg" : {
+              "area" : [ 15, 70, 470, 173 ]
+            }
+          },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1594895379916,
+        "type" : "node"
+      } ],
+      "time" : 1594895376899,
+      "type" : "node"
+    } ]
+  }
+}

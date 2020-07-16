@@ -1,0 +1,185 @@
+{
+  "testId" : "1-homepage-on-desktop-device",
+  "name" : "Homepage on desktop device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://galenframework.com 1640x740",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check homepage.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: homepage.gspec included tags: desktop",
+          "status" : "info",
+          "time" : 1594895376800,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "homepage.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "buttonbtn",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "buttonbtn", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "width  232px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "buttonbtn",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "buttonbtn",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "232px",
+                  "realDistance" : "232px"
+                } ],
+                "highlight" : [ "buttonbtn" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "height  58px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "buttonbtn",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "buttonbtn",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "58px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "buttonbtn" ]
+              } ]
+            }, {
+              "name" : "textfield",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "textfield", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "text is \"Automated testing of look and feel for your responsive websites\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "text starts \"Automated\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "text ends \"websites\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "text contains \"look and feel\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "above buttonbtn 10 to 60 px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "textfield",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "buttonbtn",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "10 to 60px",
+                  "realDistance" : "50px"
+                } ],
+                "highlight" : [ "textfield", "buttonbtn" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below textGF 60px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "textfield",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "textGF",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "60px",
+                  "realDistance" : "60px"
+                } ],
+                "highlight" : [ "textfield", "textGF" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "textGF" : {
+              "area" : [ 835, 170, 555, 176 ]
+            },
+            "textfield" : {
+              "area" : [ 250, 406, 1140, 33 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 1640, 7866 ]
+            },
+            "buttonbtn" : {
+              "area" : [ 703, 489, 232, 58 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1594895374444,
+        "type" : "node"
+      } ],
+      "time" : 1594895370562,
+      "type" : "node"
+    } ]
+  }
+}

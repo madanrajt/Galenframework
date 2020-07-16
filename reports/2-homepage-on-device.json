@@ -1,0 +1,255 @@
+{
+  "testId" : "2-homepage-on-device",
+  "name" : "Homepage on  device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "http://galenframework.com 400x500",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check homepage.gspec --include \"all,mobile\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: homepage.gspec included tags: all,mobile",
+          "status" : "error",
+          "time" : 1594892889583,
+          "includedTags" : [ "all", "mobile" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Main section",
+            "place" : {
+              "filePath" : "homepage.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "buttonbtn",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "buttonbtn", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width  232px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "buttonbtn",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "buttonbtn",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "232px",
+                  "realDistance" : "232px"
+                } ],
+                "highlight" : [ "buttonbtn" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 17
+                },
+                "name" : "height  58px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "buttonbtn",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "buttonbtn",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "58px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "buttonbtn" ]
+              } ]
+            }, {
+              "name" : "textfield",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "inside screen",
+                "meta" : [ ],
+                "highlight" : [ "textfield", "screen" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "text is \"Automated testing of look and feel for your responsive websites\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "text starts \"Automated\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "text ends \"websites\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "text contains \"look and feel\"",
+                "highlight" : [ "textfield" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 25
+                },
+                "name" : "above button 10 to 60 px",
+                "errors" : [ "Cannot find locator for \"button\" in page spec" ],
+                "highlight" : [ ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "below textGF 60px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "textfield",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "textGF",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "60px",
+                  "realDistance" : "60px"
+                } ],
+                "highlight" : [ "textfield", "textGF" ]
+              } ]
+            }, {
+              "name" : "imageimg",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "inside imageouterpart",
+                "meta" : [ ],
+                "highlight" : [ "imageimg", "imageouterpart" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "left-of textGF 57px",
+                "errors" : [ "\"imageimg\" is -470px left of \"textGF\" instead of 57px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "imageimg",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "textGF",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "57px",
+                  "realDistance" : "-470px"
+                } ],
+                "highlight" : [ "imageimg", "textGF" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "width  502px",
+                "errors" : [ "\"imageimg\" width is 470px instead of 502px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "imageimg",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "imageimg",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "502px",
+                  "realDistance" : "470px"
+                } ],
+                "highlight" : [ "imageimg" ]
+              }, {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "homepage.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "height  185px",
+                "errors" : [ "\"imageimg\" height is 173px instead of 185px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "imageimg",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "imageimg",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "185px",
+                  "realDistance" : "173px"
+                } ],
+                "highlight" : [ "imageimg" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "textGF" : {
+              "area" : [ 15, 263, 470, 66 ]
+            },
+            "textfield" : {
+              "area" : [ 15, 389, 470, 66 ]
+            },
+            "imageouterpart" : {
+              "area" : [ 15, 70, 470, 173 ]
+            },
+            "screen" : {
+              "area" : [ 0, 0, 500, 9296 ]
+            },
+            "buttonbtn" : {
+              "area" : [ 133, 505, 232, 58 ]
+            },
+            "imageimg" : {
+              "area" : [ 15, 70, 470, 173 ]
+            }
+          },
+          "screenshot" : "layout-2-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1594892888851,
+        "type" : "node"
+      } ],
+      "time" : 1594892885784,
+      "type" : "node"
+    } ]
+  }
+}

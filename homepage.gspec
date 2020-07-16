@@ -1,0 +1,40 @@
+@objects
+    header-container        id      header
+    header                  id      bs-example-navbar-collapse-1
+    logo                    css     #header a img
+    buttonbtn               id      home-download-button
+    textfield               css     #intro div h2
+    textGF                  css     #intro div h1
+    imageouterpart          id      img-home-devices
+    imageimg                css     #intro div img
+
+= Main section =
+    buttonbtn:
+         @on desktop
+            inside screen
+            width  232px
+            height  58px
+
+    textfield:
+        @on desktop
+            inside screen
+            text is "Automated testing of look and feel for your responsive websites" 
+            text starts "Automated" 
+            text ends "websites" 
+            text contains "look and feel" 
+            above buttonbtn 10 to 60 px 
+            below textGF 60px
+
+    imageimg:
+        @on mobile
+            inside imageouterpart
+            left-of textGF -470px
+        
+    imageimg:
+        @on mobile
+            width  470px
+            height 220px
+
+
+
+

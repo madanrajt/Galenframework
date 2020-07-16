@@ -1,0 +1,31 @@
+{
+  "tests" : [ {
+    "name" : "Homepage on desktop device",
+    "startedAt" : 1594895370561,
+    "endedAt" : 1594895376898,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 10,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 10
+    },
+    "testId" : "1-homepage-on-desktop-device",
+    "failed" : false,
+    "duration" : 6337
+  }, {
+    "name" : "Homepage on mobile device",
+    "startedAt" : 1594895376899,
+    "endedAt" : 1594895380545,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 3,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 4
+    },
+    "testId" : "2-homepage-on-mobile-device",
+    "failed" : true,
+    "duration" : 3646
+  } ]
+}

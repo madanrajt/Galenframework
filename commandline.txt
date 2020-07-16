@@ -1,0 +1,8 @@
+//to run in cmd
+galen check homepage.gspec  --url http://samples.galenframework.com/tutorial1/tutorial1.html --size 640x480  --htmlreport reports
+
+//useful guide
+http://galenframework.com/docs/reference-galen-spec-language-guide/
+
+// to run test
+galen test introduction.test --htmlreport reports
