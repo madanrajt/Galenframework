@@ -1,0 +1,1 @@
+# Galenframework sample design
